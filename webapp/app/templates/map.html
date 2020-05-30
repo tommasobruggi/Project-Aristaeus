@@ -83,7 +83,19 @@
           map.setMaxBounds(new L.LatLngBounds([0,0], [432,576]));  // prevent panning outside the image area.
           //Note the viscosity setting keeps the image from being dragged outside this 
         </script>
-        <br>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+        </div>
+        <script>
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value; // Display the default slider value
+
+          // Update the current slider value (each time you drag the slider handle)
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+        </script>
       </div>
     </div>
 
