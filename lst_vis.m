@@ -1,5 +1,5 @@
 import matlab.io.hdf4.*
-sdID = sd.start('data/testdatatemp.hdf','read');
+sdID = sd.start('datasets/testdatatemp.hdf','read');
 [ndatasets,ngatts] = sd.fileInfo(sdID);
 idx = sd.nameToIndex(sdID,'LST_Day_1km');
 sdsID = sd.select(sdID,idx);
@@ -14,5 +14,5 @@ data = data'; %transpose to get correct orientation of the map
 h = heatmap(data); %create a heatmap
 h.Colormap = parula;
 grid off %remove the grid so you can actually save the data
-csvwrite('csv_files/testdata.csv', data); %export to a csv file
-savefig('maps/lst');
+csvwrite('csv_data/testdata.csv', data); %export to a csv file
+savefig('figs/lst');
