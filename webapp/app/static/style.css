@@ -1,6 +1,7 @@
 body {
     background: #fcf6f5ff !important;
     font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: larger;
 }
 
 h1 {
@@ -20,6 +21,10 @@ h3 {
 
 h4 {
     font-family: 'Arvo', serif;
+}
+
+.navbar-brand {
+    font-family: 'Arvo';
 }
 
 .example {

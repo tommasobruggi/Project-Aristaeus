@@ -4,7 +4,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,18 +17,18 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark ">
-        <a class="navbar-brand" href="/">Aristaeus Project</a>
+        <a class="navbar-brand" href="#">Aristaeus Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/map">Map</a>
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/map">Map<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/data">Data</a>
@@ -40,7 +39,7 @@
 
     <div class="container">
         <br>
-        <h1>Welcome to our website!</h1>
+        <h1>Map</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -49,30 +48,14 @@
             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
             in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <div class="row">
-            <div class="col-sm">
-                <h2>Something</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris
-                </p>
-                <div class="container example bg-success">
-                    <h4>Something important!</h4>
-                    <button type="button" class="btn btn-light">Button!!</button>
-                </div>
-            </div>
-            <div class="col-sm">
-                <img src="{{ url_for('static', filename='placeholder.jpg') }}" class="img-fluid" alt="An example image">
-                <br>
-                <br>
-                <h2>Something else</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris
-                </p>
-            </div>
-        </div>
 
+        <!-- IMAGE VIEWER STUFF -->
+        <link href="{{ url_for('static', filename='imageviewer.css') }}"  rel="stylesheet" type="text/css" />
+        <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='imageviewer.js') }}"></script>
+        
+        <img id="image" src="{{ url_for('static', filename='image.png') }}" data-high-res-src="{{ url_for('static', filename='image.png') }}">
+        <script src="{{ url_for('static', filename='image_mode.js') }}"></script>
     </div>
 
 
