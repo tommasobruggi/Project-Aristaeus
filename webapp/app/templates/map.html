@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
     <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark ">
@@ -49,13 +58,29 @@
             in culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <!-- IMAGE VIEWER STUFF -->
-        <link href="{{ url_for('static', filename='imageviewer.css') }}"  rel="stylesheet" type="text/css" />
-        <script src="{{ url_for('static', filename='jquery.js') }}"></script>
-        <script src="{{ url_for('static', filename='imageviewer.js') }}"></script>
-        
-        <img id="image" src="{{ url_for('static', filename='image.png') }}" data-high-res-src="{{ url_for('static', filename='image.png') }}">
-        <script src="{{ url_for('static', filename='image_mode.js') }}"></script>
+        <div id="image-map" style="width: 1152px; height: 864px; border: 0px solid #AAA;"></div>
+        <script>
+          // Using leaflet.js to pan and zoom a big image.
+          var map = L.map('image-map', {
+            minZoom: 1,
+            maxZoom: 4,
+            center: [0, 0],
+            zoom: 1,
+            maxBoundsViscosity: 1,
+            crs: L.CRS.Simple
+
+          });
+          //zoom 4 full size image is 4608px * 3456 px
+          //zoom 3 2304 * 1728
+          //zoom 2 1152 * 864
+          //zoom 1 576 * 432
+
+          var image= L.imageOverlay("{{ url_for('static', filename='image.png') }}", [[0,0],[432,576]]); //initial size at zoom 1 )
+          image.addTo(map);
+          // tell leaflet that the map is exactly as big as the image
+          map.setMaxBounds(new L.LatLngBounds([0,0], [432,576]));  // prevent panning outside the image area.
+          //Note the viscosity setting keeps the image from being dragged outside this 
+        </script>
     </div>
 
 
