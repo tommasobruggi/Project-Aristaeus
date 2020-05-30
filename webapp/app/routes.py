@@ -11,3 +11,8 @@ def index():
 @app.route('/map')
 def map():
     return render_template('map.html', title='Map')
+
+
+@app.route('/data')
+def data():
+    return render_template('data.html', title='Data')

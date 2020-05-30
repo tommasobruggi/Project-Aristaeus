@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-    <title>Map | Aristaeus Project</title>
+    <title>Data | Aristaeus Project</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -36,11 +36,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/map">Map<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/data">Data</a>
+                  <a class="nav-link" href="/map">Map</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/data">Data<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -48,7 +48,7 @@
 
     <div class="container">
         <br>
-        <h1>Map</h1>
+        <h1>Data</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -58,38 +58,7 @@
             in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
-    <div class="container">
-      <div class="row">
-        <div id="image-map" style="width: 1152px; height: 864px;"></div>
-        <script>
-          // Using leaflet.js to pan and zoom a big image.
-          var map = L.map('image-map', {
-            minZoom: 1,
-            maxZoom: 4,
-            center: [0, 0],
-            zoom: 1,
-            maxBoundsViscosity: 1,
-            crs: L.CRS.Simple
 
-          });
-          //zoom 4 full size image is 4608px * 3456 px
-          //zoom 3 2304 * 1728
-          //zoom 2 1152 * 864
-          //zoom 1 576 * 432
-
-          var image= L.imageOverlay("{{ url_for('static', filename='image.png') }}", [[0,0],[432,576]]); //initial size at zoom 1 )
-          image.addTo(map);
-          // Tell leaflet that the map is exactly as big as the image
-          map.setMaxBounds(new L.LatLngBounds([0,0], [432,576]));  // prevent panning outside the image area.
-          //Note the viscosity setting keeps the image from being dragged outside this 
-        </script>
-        <br>
-      </div>
-    </div>
-
-
-
-    
     <footer class="page-footer font-small">
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright: HIVE
