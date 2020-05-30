@@ -1,0 +1,29 @@
+body {
+    background: #fcf6f5ff !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h2 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h3 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h4 {
+    font-family: 'Arvo', serif;
+}
+
+.example {
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+}
