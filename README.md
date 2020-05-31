@@ -30,7 +30,7 @@ As bees are great indicators of how healthy, or otherwise, our environment is, P
 
 We have come up with an automated information portal, in which climatic data, specifically the daytime temperature, is correlated with land use, ground ozone and nitrogen dioxide concentrations, and both normalized difference and enhanced vegetation indexes. This portal is accessible publicly but is targeted towards local government agencies and environmental associations. For now, this addresses the UK only but we plan on scaling the initiative worldwide.
 
-## Data Retrieval & Analysis
+## Environmental Factors
 
 We document how healthy bee environments have changed through the months of January to May due to the lockdown policy that was implemented in the United Kingdom and Ireland on March 23rd 2020.
 
@@ -50,10 +50,24 @@ The environmental factors which we decided would constitute a healthy bee enviro
 
 5. Concentration of Nitrogen Dioxide Gas (NO2): A measure of the amount of nitrogen dioxide gas present in the troposphere.
 
+## Data Retrieval & Analysis
+
 All datasets were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
 
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
-This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for analysis and plotting.
+This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. All datasets are then correlated and combined to form a single map for each month outlining the optimal geographical locations for bees to prosper.
+
+## Healthy Bee Environment Criteria
+
+1. NDVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If NDVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score.
+
+2. EVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If EVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score.
+
+3. Temperature (15-30 degrees celsius): Bee populations tend to sleep in colder months rendering bee abundance lower over the Winter. The lowest temperature recorded in a month is said to be negatively correlated with bee abundance. If the average temperature for the month lies between 15 and 30 degrees celsius, that region will subsequently gain +0.75 to their score.
+
+4. Concentration of Ozone: Studies have shown that high concentrations of ozone (O3) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, if a region’s O3 concentrations lie between   and    , that region will subsequently gain +0.40 to their score.
+
+5. Concentration of Nitrogen Dioxide: Studies have shown that high concentrations of ozone (NO2) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, if a region’s NO2 concentrations lie between and    , that region will subsequently gain +0.35 to their score.
 
 Results are neatly presented on our [website](https://aristeaus.herokuapp.com/) which was developed using a flask server and bootstrap for the front-end.
 
