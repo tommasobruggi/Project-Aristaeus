@@ -57,7 +57,7 @@ All datasets were retrieved from [NASA's Earthdata Search](https://search.earthd
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. 
 
-All datasets are then combined to form a single map for each month outlining the optimal geographical locations for bees to prosper. This is achieved by presenting a novel approach: the Healthy Bee Enivornment Criteria.
+All datasets are then combined to form a single map for each month outlining the optimal geographical locations for bees to prosper. This is achieved by presenting a novel approach: the Healthy Bee Enivronment Criteria.
 
 ## Healthy Bee Environment Criteria
 
