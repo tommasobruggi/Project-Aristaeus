@@ -55,7 +55,9 @@ The environmental factors which we decided would constitute a healthy bee enviro
 All datasets were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
 
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
-This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. All datasets are then correlated and combined to form a single map for each month outlining the optimal geographical locations for bees to prosper.
+This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. 
+
+All datasets are then combined to form a single map for each month outlining the optimal geographical locations for bees to prosper. This is achieved by presenting a novel approach: the Healthy Bee Enivornment Criteria.
 
 ## Healthy Bee Environment Criteria
 
