@@ -7,7 +7,10 @@ This project is tackling the *Quiet Planet* Space Apps COVID-19 Challenge by NAS
 ## Project Aims & Achievements
 
 Project Aristaeus aims to raise awareness of the endangered bee populations, which struggle to survive. We provide the first website which uses space-based environmental data to monitor geographically where bee populations can thrive in the UK. Project Aristaeus is also a useful tool to quickly compare and evaluate the changes in environmental factors which could lead to species extinction.
-PUT WEBSITE LINK
+
+Check out our website!
+
+[Project Aristaeus website](https://aristeaus.herokuapp.com/)
 
 ## Problem Description
 
@@ -65,5 +68,4 @@ Put in list format AND UPDATE ONCE REBECA FINISHED THIS IN GOOGLE DOCS
 
 ## License 
 
-This work is provided under the terms of Creative Commons Attribution 4.0 International (CC-BY-4.0) license.
-https://creativecommons.org/licenses/by/4.0/
+This work is provided under the terms of Creative Commons Attribution 4.0 International ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) license.
