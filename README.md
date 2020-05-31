@@ -2,7 +2,12 @@
 
 ## The Challenge
 
-Covid-19 hackathon bla bla section Quiet Earth (put in Italics).
+This project is tackling the *Quiet Planet* Space Apps COVID-19 Challenge by NASA. The challenge is to use space-based data to document the global to local environmental changes caused by Covid-19 and the associated societal responses.
+
+## Project Aims & Achievements
+
+Project Aristaeus aims to raise awareness of the endangered bee populations, which struggle to survive. We provide the first website which uses space-based environmental data to monitor geographically where bee populations can thrive in the UK. Project Aristaeus is also a useful tool to quickly compare and evaluate the changes in environmental factors which could lead to species extinction.
+PUT WEBSITE LINK
 
 ## Problem Description
 
@@ -11,11 +16,6 @@ The COVID-19 outbreak has affected people in 185 countries, and the effects have
 For British bees, there is still hope as a first step could be taken by some authorities from Devon, which have already accepted that the verge mowing operation should be done later and less frequently. But what about the other endangered species?
 
 Through our project, we would like to show that even the slightest change in societal habits could improve the life of organisms on Earth. We are living in near-unprecedented times and we believe the minimal impact of human factors on the environment is a great opportunity to learn better about our ecosystem.
-
-## Project Aims & Achievements
-
-Project Aristaeus aims to raise awareness of the endangered bee populations, which struggle to survive. We provide the first website which uses space-based environmental data to monitor geographically where bee populations can thrive in the UK. Project Aristaeus is also a useful tool to quickly compare and evaluate the changes in environmental factors which could lead to species extinction.
-PUT WEBSITE LINK
 
 ## What inspired us
 
