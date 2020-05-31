@@ -67,7 +67,7 @@ All datasets are then combined to form a single map for each month outlining the
 As can be viewed below, a map of the UK (and Ireland) has been divided into small regional units. Each of these regional units is associated with a value for each of the environmental factors that have been listed above. If all of a region’s values lie within the threshold imposed by HIVE, that region will be given a correspondingly high score and is coloured a bright shade of green. Conversely, if a region happens to not meet any or only a few of the criteria imposed, that region will be given a correspondingly low score and is coloured red.
 
 <p align="center">
-  <img src="https://github.com/DemetrisChr/project-aristaeus/blob/master/January results.png">
+  <img src="https://github.com/DemetrisChr/project-aristaeus/blob/master/January%20result.png">
 </p>
 
 1. NDVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If NDVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score. 
