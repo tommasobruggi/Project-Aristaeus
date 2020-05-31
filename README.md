@@ -44,21 +44,26 @@ PROBABLY NEED TO GO MORE IN DEPTH
 
 ## Authors
 
-- Tommaso Bruggi
-- Callum Abbott
-- Clara Edmonds
-- Nikolas Pilavakis
-- Rebeca Ursu
-- Demetris Christodoulou
+- [Tommaso Bruggi](https://www.linkedin.com/in/tommasobruggi/)
+- [Callum Abbott](https://www.linkedin.com/in/c-abbott/)
+- [Clara Edmonds](https://www.youtube.com/channel/UCK7Z8YWukZ2QGBlCDN7LEog)
+- [Nikolas Pilavakis](https://www.linkedin.com/in/nikolas-pilavakis-a967a11a1/)
+- [Rebeca Ursu](https://www.linkedin.com/in/rebeca-elena-ursu/)
+- [Demetris Christodoulou](https://www.linkedin.com/in/dimitris-c/)
 
-(MAYBE CHANGE TO CONTACT US AND INSTEAD OF JUST NAMES PUT OUR LINKEDIN PROFILES)
+Connect with us and feel free to contact us!
 
 ## Related Literature
 
- ‘How many coronavirus cases are in your area? Use our tool to find out’, The Telegraph, 31st of May, 2020
-‘Coronavirus may prove boost for UK's bees and rare wildflowers’, The Guardian, 9th of April, 2020
-‘Coronavirus: UK’s wildflowers could see best summer for years due to lockdown, conservation charity says’, Independent, 9th of April, 2020
-‘20 facts you need to know about bees’, Friends of Earth
-‘It Takes 2 Million Flowers to Make 1 lb. of Honey’, AgHires, 31st of August, 2018
+1. ‘How many coronavirus cases are in your area? Use our tool to find out’, The Telegraph, 31st of May, 2020
+2. ‘Coronavirus may prove boost for UK's bees and rare wildflowers’, The Guardian, 9th of April, 2020
+3. ‘Coronavirus: UK’s wildflowers could see best summer for years due to lockdown, conservation charity says’, Independent, 9th of April, 2020
+4. ‘20 facts you need to know about bees’, Friends of Earth
+5. ‘It Takes 2 Million Flowers to Make 1 lb. of Honey’, AgHires, 31st of August, 2018
 
 Put in list format AND UPDATE ONCE REBECA FINISHED THIS IN GOOGLE DOCS
+
+## License 
+
+This work is provided under the terms of Creative Commons Attribution 4.0 International (CC-BY-4.0) license.
+https://creativecommons.org/licenses/by/4.0/
