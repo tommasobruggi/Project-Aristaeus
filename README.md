@@ -52,7 +52,10 @@ The environmental factors which we decided would constitute a healthy bee enviro
 
 ## Data Retrieval & Analysis
 
-All 5 datasets above were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
+All 5 datasets above were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). 
+For Project Aristaeus, we utilised measurements taken from NASA's Aura and Terra missions. The data collected from the Terra mission utilised the MODIS instrument which provided us with measurements of NDVI, EVI and land surface temperature (LST). Meanwhile, the Aura mission, utilising the OMI instrument, provided us with measurements of concentrations for ozone and nitrogen dioxide gas in the troposphere.
+
+For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
 
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. 
