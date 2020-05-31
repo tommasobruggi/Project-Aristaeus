@@ -57,12 +57,12 @@ Connect with us and feel free to contact us!
 
 ## Related Literature
 
-1. Stefan Dötterl, Marina Vater, Thomas Rupp, and Andreas Held, 'Ozone Differentially Affects Perception of Plant Volatiles in Western Honey Bees', 25th of June 2016
-2. Misha Leong, George K. Roderick, 'Remote sensing captures varying temporal patterns of vegetation between human-altered and natural landscapes', 4th of August 2015
-2. ‘Coronavirus may prove boost for UK's bees and rare wildflowers’, The Guardian, 9th of April, 2020
-3. ‘20 facts you need to know about bees’, Friends of Earth
-4. ‘It Takes 2 Million Flowers to Make 1 lb. of Honey’, AgHires, 31st of August, 2018
-5. Margaret J. Couvillon, Ginny Fitzpatrick, Anna Dornhaus, 'Ambient Air Temperature Does Not Predict whether Small or Large Workers Forage in Bumble Bees (Bombus impatiens)', 21st of May 2015
+1. Stefan Dötterl, Marina Vater, Thomas Rupp, and Andreas Held, [Ozone Differentially Affects Perception of Plant Volatiles in Western Honey Bees](https://link.springer.com/article/10.1007/s10886-016-0717-8), Springer, 25th of June 2016
+2. Misha Leong, George K. Roderick, [Remote sensing captures varying temporal patterns of vegetation between human-altered and natural landscapes](https://pubmed.ncbi.nlm.nih.gov/26290795/), NCBI, 4th of August 2015
+2. [Coronavirus may prove boost for UK's bees and rare wildflowers](https://www.theguardian.com/environment/2020/apr/09/coronavirus-may-prove-boost-for-uks-bees-and-rare-wildflowers), The Guardian, 9th of April, 2020
+3. [20 facts you need to know about bees](https://friendsoftheearth.uk/bees/20-facts-you-need-know-about-bees), Friends of Earth
+4. [It Takes 2 Million Flowers to Make 1 lb. of Honey](https://aghires.com/honey-bees/), AgHires, 31st of August, 2018
+5. Margaret J. Couvillon, Ginny Fitzpatrick, Anna Dornhaus, [Ambient Air Temperature Does Not Predict whether Small or Large Workers Forage in Bumble Bees (Bombus impatiens)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4440703/), NCBI, 21st of May 2015
 
 ## License 
 
