@@ -20,7 +20,7 @@ For British bees, there is still hope as a first step could be taken by some aut
 
 Through our project, we would like to show that even the slightest change in societal habits could improve the life of organisms on Earth. We are living in near-unprecedented times and we believe the minimal impact of human factors on the environment is a great opportunity to learn better about our ecosystem.
 
-[Project Poster](https://github.com/DemetrisChr/project-aristaeus/blob/master/Poster_final.png)
+![Project Poster](https://github.com/DemetrisChr/project-aristaeus/blob/master/Poster_final.png)
 
 ## What inspired us
 
@@ -32,7 +32,7 @@ We have come up with an automated information portal, in which climatic data, sp
 
 ## Data Retrieval & Analysis
 
-Datasets were retrieved from a variety of sources, mainly from NASA’s Earthdata Search (https://search.earthdata.nasa.gov/search).
+Datasets were retrieved from a variety of sources, mainly from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search).
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 The website was developed using a flask server and bootstrap for the front-end.
 
