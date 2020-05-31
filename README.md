@@ -64,7 +64,7 @@ All datasets are then combined to form a single map for each month outlining the
 
 ## Healthy Bee Environment Criteria
 
-As can be viewed below, a map of the UK (and Ireland) has been divided into small regional units. Each of these regional units is associated with a value for each of the environmental factors that have been listed above. If all of a region’s values lie within the threshold imposed by HIVE, that region will be given a correspondingly high score and is coloured a bright shade of green. Conversely, if a region happens to not meet any or only a few of the criteria imposed, that region will be given a correspondingly low score and is coloured red.
+As can be viewed below, a map of the UK (and Ireland) has been divided into small regional units. Each of these regional units is associated with a value for each of the environmental factors that have been listed above. If all of a region’s values lie within the threshold imposed by HIVE, that region will be given a correspondingly high score and is coloured a bright shade of yellow. Conversely, if a region happens to not meet any or only a few of the criteria imposed, that region will be given a correspondingly low score and is coloured blue.
 The map below represents the Healthy Bee Environment Criteria outlined below for the month of January.
 
 <p align="center">
