@@ -61,15 +61,23 @@ All datasets are then combined to form a single map for each month outlining the
 
 ## Healthy Bee Environment Criteria
 
-1. NDVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If NDVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score.
+As can be viewed below, a map of the UK and Ireland has been divided into small regional units. Each of these regional units is associated with a value for each of the environmental factors that have been listed above. If all of a region’s values lie within the threshold imposed by HIVE, that region will be given a correspondingly high score and is coloured a bright shade of green. Conversely, if a region happens to not meet any or only a few of the criteria imposed, that region will be given a correspondingly low score and is coloured red.
 
-2. EVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If EVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score.
+
+
+
+
+
+
+1. NDVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If NDVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score. 
+
+2. EVI (0.5 - 1.0): This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If EVI values in a region lie between 0.5 and 1.0, that region will subsequently gain +1 to their score. 
 
 3. Temperature (15-30 degrees celsius): Bee populations tend to sleep in colder months rendering bee abundance lower over the Winter. The lowest temperature recorded in a month is said to be negatively correlated with bee abundance. If the average temperature for the month lies between 15 and 30 degrees celsius, that region will subsequently gain +0.75 to their score.
 
-4. Concentration of Ozone: Studies have shown that high concentrations of ozone (O3) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, if a region’s O3 concentrations lie between   and    , that region will subsequently gain +0.40 to their score.
+4. Concentration of Ozone: Studies have shown that high concentrations of ozone (O3) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future. The data collected for O3 gas ranged between 230 and 500 Dobson units. In order to reward areas moderately with lower O3 concentrations in the UK and Ireland, if a region’s O3 concentrations were lower than 345 Dobson units, that region will subsequently gain +0.40 to their score. Due to the research on how this environmental factor affects bee populations being relatively new, we decided to moderate the reward given.
 
-5. Concentration of Nitrogen Dioxide: Studies have shown that high concentrations of ozone (NO2) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, if a region’s NO2 concentrations lie between and    , that region will subsequently gain +0.35 to their score.
+5. Concentration of Nitrogen Dioxide: Studies have shown that high concentrations of ozone (NO2) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen throughout the environment, this effectively reduces the number of flowers that will bloom in the future.The data collected for NO2 ranged between ~ 1.05e15 - 9.78e15 molecules per cm^-2. In order to reward areas moderately with lower NO2 concentrations in the UK and Ireland, if a region’s NO2 concentrations were lower than 3.5e15 molecules per cm^-2, that region will subsequently gain +0.40 to their score. Due to the research on how this environmental factor affects bee populations being relatively new, we decided to moderate the reward given.
 
 Results are neatly presented on our [website](https://aristeaus.herokuapp.com/) which was developed using a flask server and bootstrap for the front-end.
 
