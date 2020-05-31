@@ -32,17 +32,30 @@ We have come up with an automated information portal, in which climatic data, sp
 
 ## Data Retrieval & Analysis
 
-Datasets were retrieved from a variety of sources, mainly from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search).
+We document how healthy bee environments have changed through the months of January to May due to the lockdown policy that was implemented in the United Kingdom and Ireland on March 23rd 2020.
+
+The environmental factors which we decided would constitute a healthy bee environment, subject to the quantification of these factors meeting a pre-determined threshold, consist of the following:
+
+1. Normalized Difference Vegetation Index (NDVI): Using near-infrared and red light satellite measurements, the NDVI is a metric between   -1 and +1 which quantifies the amount of vegetation present on the land. An NDVI value of -1 indicates that an area is most likely a     body of water meanwhile an NDVI value of +1 indicates the presence of dense forest with high probability.
+
+2. Enhanced Vegetation Index (EVI): The EVI is very similar to the NDVI but now takes values between 0 and +1, where +1 indicates a high   probability of dense vegetation. The EVI has been optimised to: 
+
+    * Be more sensitive to changes in areas having high biomass (a serious shortcoming of NDVI).
+    * Reduce the influence of atmospheric conditions on vegetation index values.
+    * Correct for canopy background signals.
+    
+3. Land Surface Temperature (LST): This is the radiative skin temperature of the land surface.
+
+4. Concentration of Ozone Gas (O3): A measure of the amount of ozone gas present in the troposphere.
+
+5. Concentration of Nitrogen Dioxide Gas (NO2): A measure of the amount of nitrogen dioxide gas present in the troposphere.
+
+All datasets were retrieved from a variety of sources, mainly from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
+
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
-The website was developed using a flask server and bootstrap for the front-end.
+This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for analysis and plotting.
 
-Problems:
-One of the main problems we encountered was opening hdf and he5 files downloaded from the Earthdata search to analyze the desired data. None of us had any experience in dealing with satellite-based data prior to this challenge.
-
-Achievements:
-Having said that, we were able to find very interesting data and to visualize it effectively (e.g. using earthpy) combining data from different geographical locations. Using a slider the reader can clearly see how the vegetation indices have increased across most of the UK since the beginning of the pandemic, for example.
-
-PROBABLY NEED TO GO MORE IN DEPTH
+Finally, our [website](https://aristeaus.herokuapp.com/) was developed using a flask server and bootstrap for the front-end.
 
 ## Authors
 
@@ -63,6 +76,7 @@ Connect with us and feel free to contact us!
 3. [20 facts you need to know about bees](https://friendsoftheearth.uk/bees/20-facts-you-need-know-about-bees), Friends of Earth, 7th of April 2019
 4. [It Takes 2 Million Flowers to Make 1 lb. of Honey](https://aghires.com/honey-bees/), AgHires, 31st of August 2018
 5. Margaret J. Couvillon, Ginny Fitzpatrick, Anna Dornhaus, [Ambient Air Temperature Does Not Predict whether Small or Large Workers Forage in Bumble Bees (Bombus impatiens)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4440703/), NCBI, 21st of May 2015
+6. Jai M. Holt, [The effects of environmental factors on honey bee morbidity](https://www.ideals.illinois.edu/handle/2142/50359), Illinois, 20th of May 2014
 
 ## License 
 
