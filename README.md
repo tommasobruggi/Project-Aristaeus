@@ -1,1 +1,2 @@
-# project-aristaeus
+# Welcome to Project Aristaeus
+
