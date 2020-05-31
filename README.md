@@ -52,7 +52,7 @@ The environmental factors which we decided would constitute a healthy bee enviro
 
 ## Data Retrieval & Analysis
 
-All datasets were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
+All 5 datasets above were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
 
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. 
