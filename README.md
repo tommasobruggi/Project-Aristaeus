@@ -20,7 +20,7 @@ For British bees, there is still hope as a first step could be taken by some aut
 
 Through our project, we would like to show that even the slightest change in societal habits could improve the life of organisms on Earth. We are living in near-unprecedented times and we believe the minimal impact of human factors on the environment is a great opportunity to learn better about our ecosystem.
 
-PUT FIGURE HERE
+[Project Poster](https://github.com/DemetrisChr/project-aristaeus/blob/master/Poster_final.png)
 
 ## What inspired us
 
