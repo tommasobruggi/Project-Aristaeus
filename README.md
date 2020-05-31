@@ -55,7 +55,7 @@ All datasets were retrieved from a variety of sources, mainly from [NASA's Earth
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for analysis and plotting.
 
-Finally, our [website](https://aristeaus.herokuapp.com/) was developed using a flask server and bootstrap for the front-end.
+Results are neatly presented on our [website](https://aristeaus.herokuapp.com/) which was developed using a flask server and bootstrap for the front-end.
 
 ## Authors
 
