@@ -14,7 +14,7 @@ Check out our website!
 
 ## Problem Description
 
-The COVID-19 outbreak has affected people in 185 countries, and the effects have reached unbelievable levels, beyond the spread of the disease itself and efforts to quarantine it. However, as people have been confined to their homes, and the major industrial areas have reduced their production rates, wildlife has discovered a Quiet Earth, with less human disturbance, traffic and polluting fumes. In the UK, some councils redistribute the resources to pandemic-related activities, leaving the roadside verges uncut. This has not only stimulated wildflowers bloom, but also changed the declining trend in the wild bee population. 
+The COVID-19 outbreak has affected people across 185 countries, and the effects have reached unbelievable levels, beyond the spread of the disease itself and efforts to quarantine it. However, as people have been confined to their homes, and the major industrial areas have reduced their production rates, wildlife has discovered a Quiet Earth, with less human disturbance, traffic and polluting fumes. In the UK, some councils redistribute the resources to pandemic-related activities, leaving the roadside verges uncut. This has not only stimulated wildflowers bloom, but also changed the declining trend in the wild bee population. 
 
 For British bees, there is still hope as a first step could be taken by some authorities from Devon, which have already accepted that the verge mowing operation should be done later and less frequently. But what about the other endangered species?
 
@@ -22,14 +22,11 @@ Through our project, we would like to show that even the slightest change in soc
 
 ## What inspired us
 
-Nowadays, things are changing quickly, and NASA has demonstrated to us that the sky is no more the limit. However, for other organisms, Earth is the only home, and their lives rely on how humans manage to keep the fragile natural equilibrium intact. Bees represent just a tiny percent of the whole endangered species all around the world, each one providing important ecosystem services. ⅓ of the global food is pollination dependent and nearly 80% of the insect crop pollination is done by honey bees. Therefore, protecting them, we will be able to support the food chain worldwide, responding to the Goal 2: ZERO HUNGER. 
+Nowadays, things are changing quickly, and NASA has demonstrated to us that the sky is no more the limit. However, for other organisms, Earth is the only home, and their lives rely on how humans manage to keep the fragile natural equilibrium intact. Bees represent just a tiny percent of the whole endangered species all around the world, each one providing important ecosystem services. ⅓ of the global food is pollination dependent and nearly 80% of the insect crop pollination is done by honey bees. Therefore, protecting them, we will be able to support the food chain worldwide, responding to the Sustainable Development Goal (SDG) 2: ZERO HUNGER. 
 
-As bees are great indicators of how healthy, or otherwise, our environment is, Project Aristaeus also tackles other sustainable development goals proposed by the United Nations. Specifically, it offers insights into Goal 15: THE LIFE ON EARTH and 13: CLIMATE ACTION. 
-
+As bees are great indicators of how healthy, or otherwise, our environment is, Project Aristaeus also tackles other sustainable development goals proposed by the United Nations. Specifically, it offers insights into SDG 15: THE LIFE ON EARTH and 13: CLIMATE ACTION. 
 
 We have come up with an automated information portal, in which climatic data, specifically the daytime temperature, is correlated with land use, ground ozone and nitrogen dioxide concentrations, and both normalized difference and enhanced vegetation indexes. This portal is accessible publicly but is targeted towards local government agencies and environmental associations.
-
-WAIT FOR REBECA TO FINISH THIS OFF (CHANGE GOAL 2 TO LIKE SUSTAINBLE DEVELOPMENT GOAL 2 ETC)
 
 ## Data Retrieval & Analysis
 
@@ -58,13 +55,12 @@ Connect with us and feel free to contact us!
 
 ## Related Literature
 
-1. ‘How many coronavirus cases are in your area? Use our tool to find out’, The Telegraph, 31st of May, 2020
+1. Stefan Dötterl, Marina Vater, Thomas Rupp, and Andreas Held, 'Ozone Differentially Affects Perception of Plant Volatiles in Western Honey Bees', 25th of June 2016
+2. Misha Leong, George K. Roderick, 'Remote sensing captures varying temporal patterns of vegetation between human-altered and natural landscapes', 4th of August 2015
 2. ‘Coronavirus may prove boost for UK's bees and rare wildflowers’, The Guardian, 9th of April, 2020
-3. ‘Coronavirus: UK’s wildflowers could see best summer for years due to lockdown, conservation charity says’, Independent, 9th of April, 2020
-4. ‘20 facts you need to know about bees’, Friends of Earth
-5. ‘It Takes 2 Million Flowers to Make 1 lb. of Honey’, AgHires, 31st of August, 2018
-
-Put in list format AND UPDATE ONCE REBECA FINISHED THIS IN GOOGLE DOCS
+3. ‘20 facts you need to know about bees’, Friends of Earth
+4. ‘It Takes 2 Million Flowers to Make 1 lb. of Honey’, AgHires, 31st of August, 2018
+5. Margaret J. Couvillon, Ginny Fitzpatrick, Anna Dornhaus, 'Ambient Air Temperature Does Not Predict whether Small or Large Workers Forage in Bumble Bees (Bombus impatiens)', 21st of May 2015
 
 ## License 
 
