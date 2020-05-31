@@ -20,11 +20,13 @@ For British bees, there is still hope as a first step could be taken by some aut
 
 Through our project, we would like to show that even the slightest change in societal habits could improve the life of organisms on Earth. We are living in near-unprecedented times and we believe the minimal impact of human factors on the environment is a great opportunity to learn better about our ecosystem.
 
+PUT FIGURE HERE
+
 ## What inspired us
 
 Nowadays, things are changing quickly, and NASA has demonstrated to us that the sky is no more the limit. However, for other organisms, Earth is the only home, and their lives rely on how humans manage to keep the fragile natural equilibrium intact. Bees represent just a tiny percent of the whole endangered species all around the world, each one providing important ecosystem services. ⅓ of the global food is pollination dependent and nearly 80% of the insect crop pollination is done by honey bees. Therefore, protecting them, we will be able to support the food chain worldwide, responding to the Sustainable Development Goal (SDG) 2: ZERO HUNGER. 
 
-As bees are great indicators of how healthy, or otherwise, our environment is, Project Aristaeus also tackles other sustainable development goals proposed by the United Nations. Specifically, it offers insights into SDG 15: THE LIFE ON EARTH and 13: CLIMATE ACTION. 
+As bees are great indicators of how healthy, or otherwise, our environment is, Project Aristaeus also tackles other sustainable development goals proposed by the United Nations. Specifically, it offers insights into SDG 15: THE LIFE ON EARTH and SDG 13: CLIMATE ACTION. 
 
 We have come up with an automated information portal, in which climatic data, specifically the daytime temperature, is correlated with land use, ground ozone and nitrogen dioxide concentrations, and both normalized difference and enhanced vegetation indexes. This portal is accessible publicly but is targeted towards local government agencies and environmental associations.
 
