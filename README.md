@@ -60,7 +60,7 @@ For each dataset and for every month (from January to May inclusive) a figure wa
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for further analysis and plotting. 
 
-All datasets are then combined to form a single map for each month outlining the optimal geographical locations for bees to prosper. This is achieved by presenting a novel approach: the Healthy Bee Enivronment Criteria.
+All datasets are then combined to form a single map for each month outlining the optimal geographical locations for bees to prosper. This is achieved by presenting a novel approach: the Healthy Bee Environment Criteria.
 
 ## Healthy Bee Environment Criteria
 
