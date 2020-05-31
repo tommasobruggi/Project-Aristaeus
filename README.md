@@ -12,7 +12,7 @@ Check out our [Project Aristaeus website!](https://aristeaus.herokuapp.com/)
 
 ## Problem Description
 
-The COVID-19 outbreak has affected people across 185 countries, and the effects have reached unbelievable levels, beyond the spread of the disease itself and efforts to quarantine it. However, as people have been confined to their homes, and the major industrial areas have reduced their production rates, wildlife has discovered a Quiet Earth, with less human disturbance, traffic and polluting fumes. In the UK, some councils redistribute the resources to pandemic-related activities, leaving the roadside verges uncut. This has not only stimulated wildflowers bloom, but also changed the declining trend in the wild bee population. 
+The COVID-19 outbreak has affected people across 185 countries, and the effects have reached unbelievable levels, beyond the spread of the disease itself and efforts to quarantine it. However, as people have been confined to their homes, and the major industrial areas have reduced their production rates, wildlife has discovered a *Quiet Planet*, with less human disturbance, traffic and polluting fumes. In the UK, some councils redistribute the resources to pandemic-related activities, leaving the roadside verges uncut. This has not only stimulated wildflowers bloom, but also changed the declining trend in the wild bee population. 
 
 For British bees, there is still hope as a first step could be taken by some authorities from Devon, which have already accepted that the verge mowing operation should be done later and less frequently. But what about the other endangered species?
 
