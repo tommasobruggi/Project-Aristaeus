@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Home | Project Aristaeus</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark ">
+        <a class="navbar-brand" href="/">Project Aristaeus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/map">Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/data">Data</a>
+                </li>
+            </ul>
+            <ul class="class=nav navbar-nav navbar-right ml-auto">
+              <li><a href="https://www.github.com/DemetrisChr/project-aristaeus"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://twitter.com/HIVE_aristaeus"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1>Welcome to Project Aristaeus!</h1>
+
+        <p>
+          Bees are crucial to ecosystems: they guarantee the pollination of many cultivated and wild plants. One third of the world’s food production is dependent on pollination by bees and other insects. In the UK and Ireland, the population of wild bees is declining at an alarming rate. However, the lockdown measures due to COVID-19 have quieted the planet and given bees a moment of respite. 
+        </p>
+        <div class="row">
+            <div class="col-sm">
+                <h2>The challenge</h2>
+                <p> Project Aristaeus was created in response to the Quiet Planet Space Apps COVID-19 Challenge, organized by NASA, ESA, CSA, CNES, and JAXA. The team was tasked with looking into the global and local environmental changes caused by COVID-19 and the associated societal responses.
+                </p>
+                <img src="{{ url_for('static', filename='bee-unsplash.jpg') }}" class="img-fluid" alt="An example image"> 
+            </div>
+            <div class="col-sm">
+                <h2>The solution</h2>
+                <p> Project Aristaeus aims to show the effect of COVID-19 lockdown measures on bee habitats and raise awareness about endangered bee populations. We provide the first website which uses space-based environmental data to monitor geographically where bee populations can thrive in the UK and Ireland. By analyzing climate data, Project Aristaeus quickly compares and evaluates changes in environmental factors and their effect on bee habitats.
+                </p>
+                <div class="container example bg-warning">
+                  <h4>Explore the visualisation</h4>
+                  <a href="/map" type="button" class="btn btn-light">Map</a>
+                </div>
+                <br>
+                <style>
+                  .thumbnail {
+                    border: 1px solid #ddd; /* Gray border */
+                    border-radius: 4px;  /* Rounded border */
+                    padding: 5px; /* Some padding */
+                    width: 150px; /* Set a small width */
+                  }
+                  
+                  /* Add a hover effect (blue shadow) */
+                  .thumbnail:hover {
+                    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                  }
+                </style>
+                <div class="container example bg-secondary img_thumb">
+                  <h4>Poster</h4>
+                  <i>Click thumbnail to view</i>
+                  <br>
+                  <a target="_blank" href="{{ url_for('static', filename='poster.png') }}">
+                    <img class="thumbnail" src="{{ url_for('static', filename='poster_thumb.png') }}" alt="Poster">
+                  </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="page-footer font-small">
+        <!-- Footer -->
+        <div class="footer-copyright text-center py-3">
+          Built by HIVE for the <a href="https://www.spaceappschallenge.org/SpaceApps">SpaceApps COVID-19 Challenge</a>
+          <br>
+          Follow us on <a href="https://twitter.com/HIVE_aristaeus">Twitter</a>!
+        </div>
+        <!-- Footer -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

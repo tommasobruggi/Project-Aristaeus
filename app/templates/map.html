@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Map | Project Aristaeus</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark ">
+        <a class="navbar-brand" href="/">Project Aristaeus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/map">Map<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/data">Data</a>
+                </li>
+            </ul>
+            <ul class="class=nav navbar-nav navbar-right ml-auto">
+              <li><a href="https://www.github.com/DemetrisChr/project-aristaeus"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://twitter.com/HIVE_aristaeus"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1>Map</h1>
+        <p>
+          As part of NASA’s Space Apps COVID-19 Challenge, our team decided to document how healthy bee environments changed due to the lockdown policy that was implemented in the UK and Ireland on the 23rd of March 2020. <br>
+        </p>
+        <p>
+          Each unit on the map is associated with a value for how suitable the region is for bee habitats. If all of a region’s features fit the criteria for healthy bee habitats, then this region is coloured yellow. If a region is unsuitable for bee habitats, then the region is coloured blue.
+        </p>
+
+        
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="image-map" style="width: 1152px; height: 864px;"></div>
+        <div class="card card-body bg-light">
+          <img src="{{ url_for('static', filename='legend.png') }}" class="img-fluid" alt="An example image"> 
+          <br>
+          <table class="table borderless">
+            <tbody>
+              <tr>
+                <th style="width: 20%">January</th>
+                <th style="width: 20%">February</th>
+                <th style="width: 20%">March </th>
+                <th style="width: 20%">April </th>
+                <th style="width: 20%">May </th>
+              </tr>
+            </tbody>
+          </table>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+          </div>
+        </div>
+        <script>
+          // Using leaflet.js to pan and zoom a big image.
+          var map = L.map('image-map', {
+            minZoom: 1,
+            maxZoom: 4,
+            center: [0, 0],
+            zoom: 1,
+            maxBoundsViscosity: 1,
+            crs: L.CRS.Simple
+
+          });
+          //zoom 4 full size image is 4608px * 3456 px
+          //zoom 3 2304 * 1728
+          //zoom 2 1152 * 864
+          //zoom 1 576 * 432
+
+          var image= L.imageOverlay("{{ url_for('static', filename='jan1.png') }}", [[0,0],[432,576]]); //initial size at zoom 1 )
+          image.addTo(map);
+          // Tell leaflet that the map is exactly as big as the image
+          map.setMaxBounds(new L.LatLngBounds([0,0], [432,576]));  // prevent panning outside the image area.
+          //Note the viscosity setting keeps the image from being dragged outside this 
+      
+          var slider = document.getElementById("myRange");
+          console.log(slider.value);
+
+          // Update the current slider value (each time you drag the slider handle)
+          slider.oninput = function() {
+            console.log(this.value);
+            switch (Number(this.value)){
+              case 1:
+                image.setUrl("{{ url_for('static', filename='jan1.png') }}");
+                console.log("one");
+                break;
+              case 2:
+                image.setUrl("{{ url_for('static', filename='feb1.png') }}");
+                image.addTo(map);
+                console.log(this.value);
+                console.log("two");
+                break;
+              case 3:
+                image.setUrl("{{ url_for('static', filename='mar1.png') }}");
+                break;
+              case 4:
+                image.setUrl("{{ url_for('static', filename='apr1.png') }}");
+                break;
+              case 5:
+                image.setUrl("{{ url_for('static', filename='may1.png') }}");
+                break;
+              default:
+              console.log("default");
+              console.log(this.value);
+            }
+          }
+        </script>
+      </div>
+      <br>
+     
+      <h2>
+        Environmental Factors
+      </h2>
+      <p>
+        The environmental factors which we used to define a healthy environment for bees to thrive in consist of the following:
+      </p>
+      <ol>
+        <li><b>Normalized Difference Vegetation Index (NDVI): </b>
+          Using near-infrared and red light satellite measurements, the NDVI is a metric between -1 and +1 which quantifies the amount of vegetation present on the land. An NDVI value of -1 indicates that an area is most likely a body of water, while an NDVI value of +1 indicates the presence of dense forest.
+        </li>
+        <li><b>Enhanced Vegetation Index (EVI): </b>
+          The EVI is very similar to the NDVI but takes values between 0 and +1, where +1 indicates a high probability of dense vegetation. The EVI is more sensitive than the NDVI when it comes to changes in areas having high biomass values, and can correct for canopy background signals. 
+        </li>
+        <li>
+          <b>Land Surface Temperature (LST): </b> This is the radiative skin temperature of the land surface.
+        </li>
+        <li>
+          <b>Concentration of Ozone Gas (O3): </b>A measure of the amount of ozone gas present in the troposphere.
+        </li>
+        <li>
+          <b>Concentration of Nitrogen Dioxide Gas (NO2): </b>A measure of the amount of nitrogen dioxide gas present in the troposphere.
+        </li>
+      </ol>
+      <br>
+      <h2>
+        Healthy Bee Environment Criteria
+      </h2>
+      <ol>
+        <li>
+          <b>NDVI (0.4 - 1.0):</b><br>
+          This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If NDVI values in a region lie between 0.4 and 1.0, that region will subsequently gain +1 to their score.
+        </li>
+        <li>
+          <b>EVI (0.3 - 1.0):</b><br>
+          This variable is used as a coarse-grain metric of the amount of food available to various colonies of bees in the local area. Bee populations thrive in dense forestry hence making this variable highly influential. If EVI values in a region lie between 0.3 and 1.0, that region will subsequently gain +0.9 to their score.
+        </li>
+        <li>
+          <b>Temperature (15-30 degrees celsius):</b><br>
+          Bee populations tend to sleep in colder months rendering bee abundance lower over the Winter. The lowest temperature recorded in a month is said to be negatively correlated with bee abundance. If the average temperature for the month lies between 15 and 30 degrees celsius, that region will subsequently gain +0.75 to their score.
+        </li>
+        <li>
+          <b>Concentration of Ozone: </b><br>
+          Studies have shown that high concentrations of ozone (O3) gas can interfere with the volatile organics compounds emitted by flora. This can hinder bees not only in finding food but also in spreading pollen. This effectively reduces the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, an estimate was made for a threshold value: if a region’s O3 concentrations are less than 345 DU (Dobson Unit), that region will subsequently gain +0.60 to their score.
+        </li>
+        <li>
+          <b>Concentration of Nitrogen Dioxide:</b><br>
+          Studies have shown that high concentrations of ozone (NO2) gas can interfere with the volatile organics compounds emitted by flora. NO2 particles have a similar detrimental effect on bee populations as O3 particles, and effectively reduce the number of flowers that will bloom in the future. Due to the limited research that has been conducted on this topic, an estimate was made for if a threshold value: if the region’s NO2 concentrations are less than 3.5*10^15 molecules per cm^2, that region will subsequently gain +0.50 to their score.
+        </li>
+      </ol>
+
+    </div>
+    
+    <footer class="page-footer font-small">
+        <!-- Footer -->
+        <div class="footer-copyright text-center py-3">
+          Built by HIVE for the <a href="https://www.spaceappschallenge.org/SpaceApps">SpaceApps COVID-19 Challenge</a>
+          <br>
+          Follow us on <a href="https://twitter.com/HIVE_aristaeus">Twitter</a>!
+        </div>
+        <!-- Footer -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

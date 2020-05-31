@@ -1,0 +1,120 @@
+body {
+    background: #fcf6f5ff !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: larger;
+}
+
+h1 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h2 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h3 {
+    color: #292b2c;
+    font-family: 'Arvo', serif;
+}
+
+h4 {
+    font-family: 'Arvo', serif;
+}
+
+.navbar-brand {
+    padding: 0;
+    font-family: 'Arvo';
+}
+.navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 45px;
+    line-height: 50px;
+}
+
+.example {
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.slidecontainer {
+    width: 83%; /* Width of the outside container */
+    margin: 0 auto;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    border-radius: 5px;
+    background: #ffc107; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #292b2c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #292b2c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.table th {
+    text-align: center;   
+ }
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Github */
+.fa-github {
+  background: none;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: none;
+  color: white;
+}

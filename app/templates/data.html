@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Data | Project Aristaeus</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top navbar-dark ">
+        <a class="navbar-brand" href="/">Project Aristaeus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/map">Map</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/data">Data<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="class=nav navbar-nav navbar-right ml-auto">
+              <li><a href="https://www.github.com/DemetrisChr/project-aristaeus"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://twitter.com/HIVE_aristaeus"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1>Data</h1>
+
+        <p>
+          On the 23rd of March 2020, the UK was put on lockdown to contain the spread of COVID-19. We used several open source datasets to document the effect of this lockdown on bee habitats across the UK and Ireland by collecting data from the 1st of January 2020 until the 27th of May 2020.
+        </p>
+        <div class="row justify-content-center">
+        <div class="card-deck">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ url_for('static', filename='ndvi.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">NDVI and EVI</h5>
+              <p class="card-text">MODIS/Terra Vegetation Indices 16-Day L3 Global 1km SIN Grid V006</p>
+              <a href="https://search.earthdata.nasa.gov/search/granules?p=C194001238-LPDAAC_ECS&q=VEGETATION&polygon=-5.143798828125%2C61.101238202788096%2C-14.0394287109375%2C56.96816590468833%2C-10.28485107421875%2C47.409714755379014%2C1.6007080078125%2C48.964220468775224%2C4.976806640625%2C55.056915421845815%2C2.47686767578125%2C59.95734626870835%2C-5.143798828125%2C61.101238202788096&m=35.484325274427505!-47.11376953125!2!1!0!0%2C2&tl=1574969692!4!!" class="btn btn-warning">Source</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ url_for('static', filename='ozone.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Ozone</h5>
+              <p class="card-text">OMI/Aura TOMS-Like Ozone and Radiative Cloud Fraction L3 1 day 0.25 degree x 0.25 degree V3 (OMTO3e) at GES DISC</p>
+              <a href="https://search.earthdata.nasa.gov/search/granules?p=C1266136071-GES_DISC&q=ozone&polygon=-5.143798828125%2C61.101238202788096%2C-14.0394287109375%2C56.96816590468833%2C-10.28485107421875%2C47.409714755379014%2C1.6007080078125%2C48.964220468775224%2C4.976806640625%2C55.056915421845815%2C2.47686767578125%2C59.95734626870835%2C-5.143798828125%2C61.101238202788096&m=-28.03569140432134!-252.120849609375!0!1!0!0%2C2&tl=1574969692!4!!" class="btn btn-warning">Source</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row"><br></div>
+        <div class="row justify-content-center">
+        <div class="card-deck">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ url_for('static', filename='temperature.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Surface Temperature</h5>
+              <p class="card-text">MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1km SIN Grid V006</p>
+              <a href="https://search.earthdata.nasa.gov/search/granules?p=C203669662-LPDAAC_ECS&q=land%20surface%20temperature&polygon=-5.143798828125%2C61.101238202788096%2C-14.0394287109375%2C56.96816590468833%2C-10.28485107421875%2C47.409714755379014%2C1.6007080078125%2C48.964220468775224%2C4.976806640625%2C55.056915421845815%2C2.47686767578125%2C59.95734626870835%2C-5.143798828125%2C61.101238202788096&m=11.182766702027081!-132.97412109375!0!1!0!0%2C2&tl=1574969692!4!!" class="btn btn-warning">Source</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ url_for('static', filename='nitrogendioxide.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Nitrogen Dioxide</h5>
+              <p class="card-text">OMI/Aura Nitrogen Dioxide (NO2) Total and Tropospheric Column 1-orbit L2 Swath 13x24 km V003 (OMNO2) at GES DISC</p>
+              <a href="https://search.earthdata.nasa.gov/search/granules?p=C1239966842-GES_DISC&q=nitrogen%20dioxide&polygon=-5.143798828125%2C61.101238202788096%2C-14.0394287109375%2C56.96816590468833%2C-10.28485107421875%2C47.409714755379014%2C1.6007080078125%2C48.964220468775224%2C4.976806640625%2C55.056915421845815%2C2.47686767578125%2C59.95734626870835%2C-5.143798828125%2C61.101238202788096&m=11.182766702027081!-132.97412109375!0!1!0!0%2C2&tl=1574969692!4!!" class="btn btn-warning">Source</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        
+
+    </div>
+
+    <footer class="page-footer font-small">
+        <!-- Footer -->
+        <div class="footer-copyright text-center py-3">
+          Built by HIVE for the <a href="https://www.spaceappschallenge.org/SpaceApps">SpaceApps COVID-19 Challenge</a>
+          <br>
+          Follow us on <a href="https://twitter.com/HIVE_aristaeus">Twitter</a>!
+        </div>
+        <!-- Footer -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
