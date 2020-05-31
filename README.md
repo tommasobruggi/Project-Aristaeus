@@ -50,7 +50,7 @@ The environmental factors which we decided would constitute a healthy bee enviro
 
 5. Concentration of Nitrogen Dioxide Gas (NO2): A measure of the amount of nitrogen dioxide gas present in the troposphere.
 
-All datasets were retrieved from a variety of sources, mainly from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
+All datasets were retrieved from [NASA's Earthdata Search](https://search.earthdata.nasa.gov/search). For each dataset and for every month (from January to May inclusive) a figure was created which represents the average values of the month.
 
 Data analysis was conducted using Python 3, Jupyter Notebooks and MATLAB.
 This was necessary because the satellite-based data (such as hdf and he5 files) required careful processing for analysis and plotting.
