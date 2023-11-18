@@ -2,7 +2,7 @@
 
 ## The Challenge
 
-This project is tackling the *Quiet Planet* Space Apps COVID-19 Challenge by NASA. The challenge is to use space-based data to document the global to local environmental changes caused by Covid-19 and the associated societal responses.
+This project is tackling the *Quiet Planet* NASA Space Apps COVID-19 Challenge. The challenge is to use space-based data to document the global to local environmental changes caused by Covid-19 and the associated societal responses.
 
 ## Project Aims & Achievements
 
